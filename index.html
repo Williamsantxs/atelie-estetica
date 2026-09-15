@@ -123,6 +123,8 @@ header{position:fixed;inset:0 0 auto;z-index:50;background:rgba(10,10,12,.82);ba
 .pac h3{font-size:1.05rem;letter-spacing:.02em}
 .pac .preco{font-family:'Poppins',sans-serif;font-weight:700;font-size:1.7rem;margin:14px 0 4px;color:var(--branco)}
 .pac .preco small{font-size:.8rem;font-weight:500;color:var(--cinza)}
+/* VALOR: quando o cliente liberar os precos, troque o texto de .preco e remova a classe preco--ph */
+.pac .preco--ph{font-size:1.15rem;letter-spacing:.01em;color:var(--ouro)}
 .pac ul{list-style:none;display:grid;gap:10px;margin:20px 0 26px;font-size:.88rem;color:var(--cinza)}
 .pac li{display:flex;gap:9px}
 .pac li::before{content:"✓";color:var(--ouro);font-weight:700;flex:none}
@@ -339,7 +341,7 @@ footer{border-top:1px solid var(--linha);padding:52px 0 36px;background:var(--pr
     <div class="pac-grid">
       <div class="pac rv">
         <h3>Básico</h3>
-        <div class="preco">R$ 0,00 <small>· sob consulta</small></div>
+        <div class="preco preco--ph">Sob consulta</div>
         <ul>
           <li>Lavagem técnica detalhada</li>
           <li>Limpeza de rodas e caixas de roda</li>
@@ -350,7 +352,7 @@ footer{border-top:1px solid var(--linha);padding:52px 0 36px;background:var(--pr
       </div>
       <div class="pac rv">
         <h3>Intermediário</h3>
-        <div class="preco">R$ 0,00 <small>· sob consulta</small></div>
+        <div class="preco preco--ph">Sob consulta</div>
         <ul>
           <li>Tudo do pacote Básico</li>
           <li>Higienização interna completa</li>
@@ -362,7 +364,7 @@ footer{border-top:1px solid var(--linha);padding:52px 0 36px;background:var(--pr
       <div class="pac destaque rv">
         <span class="selo">🔥 Mais escolhido</span>
         <h3>Premium</h3>
-        <div class="preco">R$ 0,00 <small>· sob consulta</small></div>
+        <div class="preco preco--ph">Sob consulta</div>
         <ul>
           <li>Tudo do pacote Intermediário</li>
           <li>Polimento técnico completo</li>
@@ -373,7 +375,7 @@ footer{border-top:1px solid var(--linha);padding:52px 0 36px;background:var(--pr
       </div>
       <div class="pac rv">
         <h3>Completo</h3>
-        <div class="preco">R$ 0,00 <small>· sob consulta</small></div>
+        <div class="preco preco--ph">Sob consulta</div>
         <ul>
           <li>Tudo do pacote Premium</li>
           <li>Recuperação de faróis</li>
