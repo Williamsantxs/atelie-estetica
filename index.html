@@ -426,6 +426,14 @@ footer{border-top:1px solid var(--linha);padding:52px 0 36px;background:var(--pr
         <span class="eyebrow rv">Avaliações</span>
         <h2 class="rv">Quem já confiou, recomenda</h2>
       </div>
+      <!-- MANUTENCAO: a nota do Google e o numero de avaliacoes estao escritos
+           a mao, nao vem da API. Quando mudarem, editar os QUATRO pontos:
+             1. <meta name="description"> no <head>        ("nota 5.0 no Google")
+             2. .hero-proof, na primeira dobra             ("5.0 no Google - 30 avaliacoes")
+             3. .nota-google .n, logo abaixo               ("5.0")
+             4. .nota-google .d, logo abaixo               ("30 avaliacoes" e "100% com nota maxima")
+           Cuidado com "100% com nota maxima": uma unica avaliacao abaixo de
+           cinco estrelas torna a frase falsa. -->
       <div class="nota-google rv">
         <span class="n">5.0</span>
         <div>
